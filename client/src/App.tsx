@@ -91,55 +91,69 @@ function App() {
 
   return (
     <div 
-      className="app-shell min-h-screen w-screen overflow-hidden flex text-[#FFFACD] bg-[#6b4226]" 
-      style={{ backgroundImage: 'radial-gradient(ellipse at center, #CD853F 0%, #8B4513 50%, #6b4226 100%)' }}
+      className="app-shell min-h-screen w-screen overflow-hidden flex text-[#FFFACD] bg-gradient-to-br from-[#1A0F16] via-[#1d1628] to-[#0f1b2e]"
     >
+      <div className="app-backdrop" />
       <audio ref={audioRef} preload="auto" crossOrigin="anonymous" />
-      <div className="app-frame max-w-md w-full mx-auto h-screen flex flex-col overflow-hidden">
+      <div className="app-frame max-w-5xl w-full mx-auto h-screen flex flex-col lg:flex-row overflow-hidden">
+        <div className="app-header">
+          <div className="brand">
+            <span className="brand-mark">ST</span>
+            <div>
+              <div className="brand-title">StoryTime</div>
+              <div className="brand-subtitle">304 audio adventures</div>
+            </div>
+          </div>
+          <div className="header-stats">
+            <span className="pill">Playlist</span>
+            <span className="pill pill-ghost">{storeStories.length || 0} tracks</span>
+          </div>
+        </div>
+
         <main className="flex-grow flex flex-col overflow-hidden relative">
-            <AnimatePresence mode="wait">
-              {view === 'player' && (
-                <motion.div
-                  key="player"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="w-full h-full"
-                >
-                  <PlayerScreen />
-                </motion.div>
-              )}
-              {view === 'library' && (
-                <motion.div
-                  key="library"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="w-full h-full"
-                >
-                  <LibraryScreen onStorySelect={() => setView('player')} />
-                </motion.div>
-              )}
-            </AnimatePresence>
+          <AnimatePresence mode="wait">
+            {view === 'player' && (
+              <motion.div
+                key="player"
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.25 }}
+                className="w-full h-full"
+              >
+                <PlayerScreen />
+              </motion.div>
+            )}
+            {view === 'library' && (
+              <motion.div
+                key="library"
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.25 }}
+                className="w-full h-full"
+              >
+                <LibraryScreen onStorySelect={() => setView('player')} />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </main>
 
-        <nav className="tab-nav flex-shrink-0 bg-[#3A220F]/50 backdrop-blur-md border-t border-t-[rgba(218,165,32,0.3)]">
-          <div className="tab-nav__inner max-w-md mx-auto flex justify-around items-center h-16">
+        <nav className="tab-nav flex-shrink-0 backdrop-blur-md border-t border-t-[rgba(255,255,255,0.08)] lg:border-t-0 lg:border-l lg:border-l-[rgba(255,255,255,0.08)]">
+          <div className="tab-nav__inner flex justify-around items-center h-16 lg:h-full lg:flex-col lg:justify-center lg:gap-4">
             <button
               onClick={() => setView('player')}
-              className={`flex flex-col items-center gap-1 p-2 transition-colors ${view === 'player' ? 'text-white' : 'text-[#FFFACD]/60 hover:text-white'}`}
+              className={`tab-btn ${view === 'player' ? 'tab-btn--active' : ''}`}
             >
               <PlayerTabIcon className="w-6 h-6" />
-              <span className="text-xs tracking-wider font-sans">Player</span>
+              <span>Player</span>
             </button>
             <button
               onClick={() => setView('library')}
-              className={`flex flex-col items-center gap-1 p-2 transition-colors ${view === 'library' ? 'text-white' : 'text-[#FFFACD]/60 hover:text-white'}`}
+              className={`tab-btn ${view === 'library' ? 'tab-btn--active' : ''}`}
             >
               <LibraryIcon className="w-6 h-6" />
-              <span className="text-xs tracking-wider font-sans">Library</span>
+              <span>Library</span>
             </button>
           </div>
         </nav>

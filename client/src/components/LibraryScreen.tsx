@@ -14,7 +14,7 @@ const formatDuration = (seconds: number): string => {
 };
 
 export default function LibraryScreen({ onStorySelect }: LibraryScreenProps) {
-  const { stories, storiesSorted, setCurrentStoryIndex, addStories } = useAudioStore();
+  const { stories, storiesSorted, setCurrentStoryIndex, addStories, currentStoryIndex, isPlaying } = useAudioStore();
   const [searchTerm, setSearchTerm] = useState('');
   const [isUploading, setIsUploading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -93,55 +93,73 @@ export default function LibraryScreen({ onStorySelect }: LibraryScreenProps) {
   };
 
   return (
-    <div className="flex flex-col h-full overflow-hidden p-4">
-      <h1 className="text-3xl font-bold text-center mb-4 text-shadow-md">Story Library</h1>
-      
-      <div className="mb-4">
-         <button
-            onClick={() => fileInputRef.current?.click()}
-            disabled={isUploading}
-            className="w-full bg-[#B8860B] text-white font-bold py-3 px-4 rounded-full hover:bg-[#DAA520] transition-colors duration-200 disabled:bg-gray-500 disabled:cursor-not-allowed"
-          >
-            {isUploading ? 'Processing...' : 'Add Your Stories'}
-        </button>
-        <input
-            type="file"
-            ref={fileInputRef}
-            onChange={handleFileUpload}
-            multiple
-            accept="audio/*,video/*"
-            className="hidden"
-        />
-      </div>
+    <div className="flex flex-col h-full overflow-hidden p-4 lg:p-6">
+      <div className="rounded-2xl border border-white/10 bg-white/5 p-4 mb-4 shadow-[0_12px_30px_rgba(0,0,0,0.25)]">
+        <div className="flex justify-between items-center gap-3 flex-wrap">
+          <div>
+            <p className="text-xs uppercase tracking-[0.18em] text-white/60">Library</p>
+            <h1 className="text-2xl font-bold text-shadow-md">Browse all stories</h1>
+            <p className="text-sm text-white/70">{storiesSorted.length} tracks · Tap to play</p>
+          </div>
+          <div className="flex gap-2">
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              disabled={isUploading}
+              className="px-4 py-2 rounded-xl text-sm font-semibold bg-white/10 hover:bg-white/20 border border-white/15 transition disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isUploading ? 'Processing…' : 'Add Your Stories'}
+            </button>
+            <input
+              type="file"
+              ref={fileInputRef}
+              onChange={handleFileUpload}
+              multiple
+              accept="audio/*,video/*"
+              className="hidden"
+            />
+          </div>
+        </div>
 
-
-      <div className="relative mb-4">
-        <input
-          type="text"
-          placeholder="Search stories..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full bg-black/20 border-2 border-[rgba(218,165,32,0.7)] text-[#FFFACD] placeholder-[#F5DEB3]/70 rounded-full py-2 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-[rgba(218,165,32,1)]"
-        />
-        <div className="absolute left-3 top-1/2 -translate-y-1/2">
-          <SearchIcon className="w-5 h-5 text-[#F5DEB3]/70" />
+        <div className="relative mt-4">
+          <input
+            type="text"
+            placeholder="Search stories..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full bg-white/5 border border-white/10 text-[#FFFACD] placeholder-white/50 rounded-xl py-3 pl-11 pr-4 focus:outline-none focus:ring-2 focus:ring-white/30"
+          />
+          <div className="absolute left-3 top-1/2 -translate-y-1/2">
+            <SearchIcon className="w-5 h-5 text-white/60" />
+          </div>
         </div>
       </div>
       
-      <div className="flex-grow overflow-y-auto rounded-lg bg-black/10 p-2">
+      <div className="flex-grow overflow-y-auto rounded-2xl bg-white/5 border border-white/10 p-2 lg:p-3 space-y-2">
         {filteredStories.length > 0 ? (
-          <ul>
-            {filteredStories.map((story) => (
-              <li key={story.id}>
-                <button
-                  onClick={() => handleStoryClick(story)}
-                  className="w-full text-left p-3 my-1 rounded-md hover:bg-black/20 transition-colors duration-200"
-                >
-                  <h3 className="font-bold text-[#FFFACD] text-lg">{story.title}</h3>
-                  <p className="text-sm text-[#F5DEB3]/80">Duration: {story.duration}</p>
-                </button>
-              </li>
-            ))}
+          <ul className="space-y-2">
+            {filteredStories.map((story) => {
+              const isCurrent = stories[currentStoryIndex]?.id === story.id;
+              return (
+                <li key={story.id}>
+                  <button
+                    onClick={() => handleStoryClick(story)}
+                    className={`w-full text-left p-3 lg:p-4 rounded-xl transition-all duration-200 border border-white/5 bg-white/5 hover:bg-white/10 ${isCurrent ? 'ring-1 ring-white/40' : ''}`}
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="min-w-0">
+                        <h3 className="font-bold text-[#FFFACD] text-base lg:text-lg truncate" title={story.title}>{story.title}</h3>
+                        <p className="text-xs text-white/60 mt-1">Duration: {story.duration}</p>
+                      </div>
+                      {isCurrent && (
+                        <span className="px-3 py-1 text-[11px] rounded-full bg-gradient-to-r from-[#7C3AED] to-[#06B6D4] text-white shadow">
+                          {isPlaying ? 'Playing' : 'Paused'}
+                        </span>
+                      )}
+                    </div>
+                  </button>
+                </li>
+              );
+            })}
           </ul>
         ) : (
           <div className="flex items-center justify-center h-full text-[#F5DEB3]/80">
