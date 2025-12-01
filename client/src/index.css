@@ -12,6 +12,46 @@ body {
   font-family: 'Cormorant Garamond', serif;
 }
 
+.app-shell {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.app-frame {
+  box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+}
+
+.tab-nav__inner button {
+  min-width: 80px;
+}
+
+@media (orientation: landscape) {
+  .app-frame {
+    max-width: 900px;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .app-frame main {
+    flex: 2;
+  }
+
+  .tab-nav {
+    width: 220px;
+    height: 100%;
+    border-top: none;
+    border-left: 1px solid rgba(218,165,32,0.3);
+  }
+
+  .tab-nav__inner {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
 @layer utilities {
   .text-shadow-md {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
