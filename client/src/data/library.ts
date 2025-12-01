@@ -328,7 +328,7 @@ const toTitle = (slug: string) => {
 export const stories: Story[] = AUDIO_KEYS.map((key, idx) => ({
   id: idx + 1,
   title: toTitle(key),
-  url: `https://storage.googleapis.com/${key}`,
+  url: `/api/audio?key=${encodeURIComponent(key)}`,
   duration: '0:00',
 }));
 
