@@ -19,6 +19,7 @@ export interface AudioState {
   isLoading: boolean;
   playbackStatus: PlaybackStatus;
   swipeDirection: number;
+  playbackError?: string;
 }
 
 export interface AudioActions {
@@ -32,4 +33,5 @@ export interface AudioActions {
   setIsLoading: (loading: boolean) => void;
   setPlaybackStatus: (status: PlaybackStatus) => void;
   addStories: (newStories: Story[]) => void;
+  setPlaybackError: (message?: string) => void;
 }

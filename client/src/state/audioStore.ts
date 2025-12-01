@@ -10,6 +10,7 @@ export const useAudioStore = create<AudioState & AudioActions>((set, get) => ({
   isLoading: true,
   playbackStatus: { positionMillis: 0, durationMillis: 0 },
   swipeDirection: 1,
+  playbackError: undefined,
 
   setStories: (stories, storiesSorted) => set({ stories, storiesSorted }),
 
@@ -84,4 +85,5 @@ export const useAudioStore = create<AudioState & AudioActions>((set, get) => ({
   setIsPlaying: (playing) => set({ isPlaying: playing }),
   setIsLoading: (loading) => set({ isLoading: loading }),
   setPlaybackStatus: (status) => set({ playbackStatus: status }),
+  setPlaybackError: (message) => set({ playbackError: message }),
 })); 

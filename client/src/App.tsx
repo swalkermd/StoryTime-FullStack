@@ -5,6 +5,7 @@ import { useAudioStore } from './state/audioStore';
 import { stories, storiesSorted } from './data/library';
 import { LibraryIcon, PlayerTabIcon } from './components/icons';
 import { AnimatePresence, motion } from 'framer-motion';
+import { AlertCircle } from 'lucide-react';
 
 type View = 'player' | 'library';
 
@@ -20,6 +21,8 @@ function App() {
     setIsLoading,
     stories: storeStories,
     setStoryDuration,
+    setPlaybackError,
+    playbackError,
   } = useAudioStore();
 
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -51,6 +54,12 @@ function App() {
     }
   }, [setPlaybackStatus, setIsLoading, setStoryDuration, storeStories, currentStoryIndex]);
 
+  const onError = useCallback(() => {
+    setIsLoading(false);
+    setIsPlaying(false);
+    setPlaybackError('Playback failed. Try again or choose another story.');
+  }, [setIsLoading, setIsPlaying, setPlaybackError]);
+
   const onEnded = useCallback(() => {
     nextStory(true);
   }, [nextStory]);
@@ -61,14 +70,16 @@ function App() {
       audio.addEventListener('timeupdate', onTimeUpdate);
       audio.addEventListener('loadedmetadata', onLoadedMetadata);
       audio.addEventListener('ended', onEnded);
+      audio.addEventListener('error', onError);
 
       return () => {
         audio.removeEventListener('timeupdate', onTimeUpdate);
         audio.removeEventListener('loadedmetadata', onLoadedMetadata);
         audio.removeEventListener('ended', onEnded);
+        audio.removeEventListener('error', onError);
       };
     }
-  }, [onTimeUpdate, onLoadedMetadata, onEnded]);
+  }, [onTimeUpdate, onLoadedMetadata, onEnded, onError]);
 
   useEffect(() => {
     const story = storeStories[currentStoryIndex];
@@ -78,6 +89,8 @@ function App() {
         if (!audio.src.endsWith(story.url)) {
             audio.src = story.url;
             audio.load();
+            setIsLoading(true);
+            setPlaybackError(undefined);
         }
 
         if (isPlaying) {
@@ -86,13 +99,14 @@ function App() {
               playPromise.catch(error => {
                 console.error("Error playing audio:", error);
                 setIsPlaying(false);
+                setPlaybackError('Playback was blocked. Tap play again or choose another story.');
               });
             }
         } else {
             audio.pause();
         }
     }
-  }, [currentStoryIndex, isPlaying, setIsPlaying]);
+  }, [currentStoryIndex, isPlaying, setIsPlaying, setIsLoading, setPlaybackError, storeStories]);
 
   return (
     <div 
@@ -114,6 +128,12 @@ function App() {
             <span className="pill pill-ghost">{storeStories.length || 0} tracks</span>
           </div>
         </div>
+        {playbackError && (
+          <div className="mx-4 lg:mx-6 mb-2 px-3 py-2 rounded-xl bg-[#F97316]/20 border border-[#F97316]/40 text-sm text-[#FFD7B5] flex items-center gap-2">
+            <AlertCircle size={16} />
+            <span>{playbackError}</span>
+          </div>
+        )}
 
         <main className="flex-grow flex flex-col overflow-hidden relative">
           <AnimatePresence mode="wait">
