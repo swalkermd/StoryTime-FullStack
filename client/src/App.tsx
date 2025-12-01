@@ -5,7 +5,7 @@ import { useAudioStore } from './state/audioStore';
 import { stories, storiesSorted } from './data/library';
 import { LibraryIcon, PlayerTabIcon } from './components/icons';
 import { AnimatePresence, motion } from 'framer-motion';
-import { AlertCircle } from 'lucide-react';
+import { AlertCircle, Wifi } from 'lucide-react';
 
 type View = 'player' | 'library';
 
@@ -86,6 +86,15 @@ function App() {
     const audio = audioRef.current;
     
     if (audio && story) {
+        // quick availability check
+        fetch(story.url, { method: 'HEAD' })
+          .then((res) => {
+            if (!res.ok) throw new Error('Unavailable');
+          })
+          .catch(() => {
+            setPlaybackError('Could not load this story. Please try another.');
+          });
+
         if (!audio.src.endsWith(story.url)) {
             audio.src = story.url;
             audio.load();
@@ -110,12 +119,12 @@ function App() {
 
   return (
     <div 
-      className="app-shell min-h-screen w-screen overflow-hidden flex text-[#FFFACD] bg-gradient-to-br from-[#1A0F16] via-[#1d1628] to-[#0f1b2e]"
+      className="app-shell min-h-screen w-screen overflow-hidden flex text-white bg-[#05070d]"
     >
       <div className="app-backdrop" />
       <audio ref={audioRef} preload="auto" crossOrigin="anonymous" />
-      <div className="app-frame max-w-5xl w-full mx-auto h-screen flex flex-col lg:flex-row overflow-hidden">
-        <div className="app-header">
+      <div className="app-frame max-w-6xl w-full mx-auto h-screen flex flex-col lg:flex-row overflow-hidden">
+        <header className="app-header">
           <div className="brand">
             <span className="brand-mark">ST</span>
             <div>
@@ -124,12 +133,15 @@ function App() {
             </div>
           </div>
           <div className="header-stats">
-            <span className="pill">Playlist</span>
+            <span className="pill">
+              <Wifi size={14} className="mr-2" />
+              Streaming
+            </span>
             <span className="pill pill-ghost">{storeStories.length || 0} tracks</span>
           </div>
-        </div>
+        </header>
         {playbackError && (
-          <div className="mx-4 lg:mx-6 mb-2 px-3 py-2 rounded-xl bg-[#F97316]/20 border border-[#F97316]/40 text-sm text-[#FFD7B5] flex items-center gap-2">
+          <div className="mx-4 lg:mx-6 mb-3 px-3 py-2 rounded-xl bg-[#F97316]/15 border border-[#F97316]/35 text-sm text-[#FFD7B5] flex items-center gap-2">
             <AlertCircle size={16} />
             <span>{playbackError}</span>
           </div>
