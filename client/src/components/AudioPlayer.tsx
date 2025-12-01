@@ -3,7 +3,7 @@ import { usePlayerStore } from '../state/store';
 
 export const AudioPlayer = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
-  const { currentStory, isPlaying, pause, setTime, setDuration, nextStory } = usePlayerStore();
+  const { currentStory, isPlaying, setTime, setDuration, nextStory } = usePlayerStore();
 
   useEffect(() => {
     const audio = audioRef.current;

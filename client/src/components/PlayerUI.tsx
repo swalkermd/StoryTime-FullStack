@@ -1,5 +1,5 @@
 import { usePlayerStore } from '../state/store';
-import { Play, Pause, SkipBack, SkipForward, Volume2 } from 'lucide-react';
+import { Play, Pause, SkipBack, SkipForward } from 'lucide-react';
 import { formatTime } from '../utils/time';
 
 export const PlayerUI = () => {

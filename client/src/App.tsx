@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     fetch('/api/health')
       .then(res => res.json())
-      .then(data => setServerStatus('online'))
+      .then(() => setServerStatus('online'))
       .catch(() => setServerStatus('offline'))
   }, [])
 
