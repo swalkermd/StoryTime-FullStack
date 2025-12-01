@@ -1,38 +1,15 @@
 import { STORIES } from '../data/stories';
 import { usePlayerStore } from '../state/store';
-import { PlayCircle, PauseCircle, Sparkles } from 'lucide-react';
+import { PlayCircle, PauseCircle } from 'lucide-react';
 import { formatTime } from '../utils/time';
-import { useState } from 'react';
 
 export const Library = () => {
   const { playStory, currentStory, isPlaying, pause, resume } = usePlayerStore();
-  const [isGenerating, setIsGenerating] = useState(false);
-
-  const handleGenerate = async () => {
-    setIsGenerating(true);
-    try {
-      const res = await fetch('/api/generate-story', { method: 'POST' });
-      const data = await res.json();
-      alert(`Backend says: ${data.message}`);
-    } catch (e) {
-      alert('Failed to call backend');
-    } finally {
-      setIsGenerating(false);
-    }
-  };
 
   return (
     <div className="p-6 pb-32 max-w-3xl mx-auto">
       <div className="flex justify-between items-end mb-8">
         <h1 className="text-3xl font-bold text-white">Library</h1>
-        <button 
-          onClick={handleGenerate}
-          disabled={isGenerating}
-          className="flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 rounded-lg font-semibold text-sm transition"
-        >
-          <Sparkles size={16} />
-          {isGenerating ? 'Dreaming...' : 'New Story'}
-        </button>
       </div>
       
       <div className="grid gap-4">
