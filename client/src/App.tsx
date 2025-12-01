@@ -19,6 +19,7 @@ function App() {
     nextStory,
     setIsLoading,
     stories: storeStories,
+    setStoryDuration,
   } = useAudioStore();
 
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -43,8 +44,12 @@ function App() {
         durationMillis: audioRef.current.duration * 1000,
       });
       setIsLoading(false);
+      const current = storeStories[currentStoryIndex];
+      if (current) {
+        setStoryDuration(current.id, audioRef.current.duration);
+      }
     }
-  }, [setPlaybackStatus, setIsLoading]);
+  }, [setPlaybackStatus, setIsLoading, setStoryDuration, storeStories, currentStoryIndex]);
 
   const onEnded = useCallback(() => {
     nextStory(true);

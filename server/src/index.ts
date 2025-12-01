@@ -3,7 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
 import fs from 'fs';
-import fetch from 'node-fetch';
+import { Readable } from 'stream';
 
 dotenv.config();
 
@@ -51,7 +51,8 @@ app.get('/api/audio', async (req, res) => {
     if (!upstreamRes.body) {
       return res.end();
     }
-    upstreamRes.body.pipe(res);
+    // Convert web ReadableStream to Node stream
+    Readable.fromWeb(upstreamRes.body as any).pipe(res);
   } catch (err) {
     console.error('Audio proxy error', err);
     res.status(502).json({ error: 'Failed to fetch audio' });

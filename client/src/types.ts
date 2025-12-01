@@ -3,6 +3,7 @@ export interface Story {
   title: string;
   url: string;
   duration: string; // formatted mm:ss
+  durationSeconds?: number;
 }
 
 export interface PlaybackStatus {
@@ -26,6 +27,7 @@ export interface AudioActions {
   playPause: () => void;
   nextStory: (shouldPlay?: boolean) => void;
   previousStory: (shouldPlay?: boolean) => void;
+  setStoryDuration: (id: number, durationSeconds: number) => void;
   setIsPlaying: (playing: boolean) => void;
   setIsLoading: (loading: boolean) => void;
   setPlaybackStatus: (status: PlaybackStatus) => void;

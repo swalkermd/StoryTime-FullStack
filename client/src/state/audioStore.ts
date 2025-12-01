@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { AudioActions, AudioState, Story } from '../types';
+import { formatTime } from '../utils/time';
 
 export const useAudioStore = create<AudioState & AudioActions>((set, get) => ({
   stories: [],
@@ -68,7 +69,19 @@ export const useAudioStore = create<AudioState & AudioActions>((set, get) => ({
     set({ stories: updatedStories, storiesSorted: updatedStoriesSorted });
   },
 
+  setStoryDuration: (id: number, durationSeconds: number) => {
+    set((state) => {
+      const format = formatTime(durationSeconds);
+      const update = (list: Story[]) =>
+        list.map((s) => (s.id === id ? { ...s, durationSeconds, duration: format } : s));
+      return {
+        stories: update(state.stories),
+        storiesSorted: update(state.storiesSorted),
+      };
+    });
+  },
+
   setIsPlaying: (playing) => set({ isPlaying: playing }),
   setIsLoading: (loading) => set({ isLoading: loading }),
   setPlaybackStatus: (status) => set({ playbackStatus: status }),
-}));
+})); 
