@@ -30,7 +30,8 @@ if (clientBuildPath) {
   app.use(express.static(clientBuildPath));
 
   // Handle SPA routing: serve index.html for any unknown path
-  app.get('*', (req, res) => {
+  // Express 5 requires a leading slash; use /* to avoid path-to-regexp error
+  app.get('/*', (req, res) => {
     res.sendFile(path.join(clientBuildPath, 'index.html'));
   });
 } else {
