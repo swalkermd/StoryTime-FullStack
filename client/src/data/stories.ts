@@ -8,7 +8,9 @@ export interface Story {
   duration: number; // seconds
 }
 
-export const STORIES: Story[] = [    {
+export const STORIES: Story[] = [
+
+  {
     id: '1',
     title: "North Sentinel Island",
     author: 'VibeCode Story',
@@ -17,7 +19,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=No'
   },
-    {
+
+  {
     id: '2',
     title: "Welcome to Sciophonic",
     author: 'VibeCode Story',
@@ -26,7 +29,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=We'
   },
-    {
+
+  {
     id: '3',
     title: "Fugu",
     author: 'VibeCode Story',
@@ -35,7 +39,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Fu'
   },
-    {
+
+  {
     id: '4',
     title: "Esperanto",
     author: 'VibeCode Story',
@@ -44,16 +49,18 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Es'
   },
-    {
+
+  {
     id: '5',
     title: "Angel's Glow",
     author: 'VibeCode Story',
-    description: 'A fascinating story about Angel''s Glow.',
+    description: 'A fascinating story about Angel's Glow.',
     audioUrl: 'https://storage.googleapis.com/story-time-audio-files/Angel%27s%20Glow.mp3',
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=An'
   },
-    {
+
+  {
     id: '6',
     title: "Cliff Young",
     author: 'VibeCode Story',
@@ -62,7 +69,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Cl'
   },
-    {
+
+  {
     id: '7',
     title: "Cargo Cults",
     author: 'VibeCode Story',
@@ -71,7 +79,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Ca'
   },
-    {
+
+  {
     id: '8',
     title: "Dancing Plague",
     author: 'VibeCode Story',
@@ -80,7 +89,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Da'
   },
-    {
+
+  {
     id: '9',
     title: "Yankee Doodle",
     author: 'VibeCode Story',
@@ -89,7 +99,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Ya'
   },
-    {
+
+  {
     id: '10',
     title: "Sciophonic",
     author: 'VibeCode Story',
@@ -98,7 +109,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Sc'
   },
-    {
+
+  {
     id: '11',
     title: "Bubble Tea",
     author: 'VibeCode Story',
@@ -107,7 +119,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Bu'
   },
-    {
+
+  {
     id: '12',
     title: "Acoustic Kitty",
     author: 'VibeCode Story',
@@ -116,7 +129,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Ac'
   },
-    {
+
+  {
     id: '13',
     title: "James Garfield",
     author: 'VibeCode Story',
@@ -125,7 +139,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Ja'
   },
-    {
+
+  {
     id: '14',
     title: "Sealand",
     author: 'VibeCode Story',
@@ -134,7 +149,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Se'
   },
-    {
+
+  {
     id: '15',
     title: "Chernobyl Wildlife",
     author: 'VibeCode Story',
@@ -143,7 +159,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Ch'
   },
-    {
+
+  {
     id: '16',
     title: "Bill Buckner",
     author: 'VibeCode Story',
@@ -152,7 +169,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Bi'
   },
-    {
+
+  {
     id: '17',
     title: "Operation Paperclip",
     author: 'VibeCode Story',
@@ -161,7 +179,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Op'
   },
-    {
+
+  {
     id: '18',
     title: "Pet Cloning",
     author: 'VibeCode Story',
@@ -170,7 +189,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Pe'
   },
-    {
+
+  {
     id: '19',
     title: "Centralia on Fire",
     author: 'VibeCode Story',
@@ -179,16 +199,18 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Ce'
   },
-    {
+
+  {
     id: '20',
     title: "Pompeii's Graffiti",
     author: 'VibeCode Story',
-    description: 'A fascinating story about Pompeii''s Graffiti.',
+    description: 'A fascinating story about Pompeii's Graffiti.',
     audioUrl: 'https://storage.googleapis.com/story-time-audio-files/Pompeii%27s%20Graffiti.mp3',
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Po'
   },
-    {
+
+  {
     id: '21',
     title: "Wojtek",
     author: 'VibeCode Story',
@@ -197,7 +219,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Wo'
   },
-    {
+
+  {
     id: '22',
     title: "Dr. James Barry",
     author: 'VibeCode Story',
@@ -206,7 +229,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Dr'
   },
-    {
+
+  {
     id: '23',
     title: "Exploding Whale",
     author: 'VibeCode Story',
@@ -215,7 +239,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Ex'
   },
-    {
+
+  {
     id: '24',
     title: "Chichi Jima Incident",
     author: 'VibeCode Story',
@@ -224,7 +249,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Ch'
   },
-    {
+
+  {
     id: '25',
     title: "Boudica",
     author: 'VibeCode Story',
@@ -233,7 +259,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Bo'
   },
-    {
+
+  {
     id: '26',
     title: "Corporate Blunders",
     author: 'VibeCode Story',
@@ -242,7 +269,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Co'
   },
-    {
+
+  {
     id: '27',
     title: "Unlikely Harmonies",
     author: 'VibeCode Story',
@@ -251,7 +279,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Un'
   },
-    {
+
+  {
     id: '28',
     title: "Molasses Flood",
     author: 'VibeCode Story',
@@ -260,7 +289,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Mo'
   },
-    {
+
+  {
     id: '29',
     title: "Underground Cities",
     author: 'VibeCode Story',
@@ -269,7 +299,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Un'
   },
-    {
+
+  {
     id: '30',
     title: "Polygraph",
     author: 'VibeCode Story',
@@ -278,7 +309,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Po'
   },
-    {
+
+  {
     id: '31',
     title: "Hannibal Barca",
     author: 'VibeCode Story',
@@ -287,7 +319,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Ha'
   },
-    {
+
+  {
     id: '32',
     title: "Antikythera Mechanism",
     author: 'VibeCode Story',
@@ -296,7 +329,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=An'
   },
-    {
+
+  {
     id: '33',
     title: "Phantom of Heilbronn",
     author: 'VibeCode Story',
@@ -305,7 +339,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Ph'
   },
-    {
+
+  {
     id: '34',
     title: "Vasili Arkhipov",
     author: 'VibeCode Story',
@@ -314,7 +349,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Va'
   },
-    {
+
+  {
     id: '35',
     title: "Floating Schools",
     author: 'VibeCode Story',
@@ -323,7 +359,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Fl'
   },
-    {
+
+  {
     id: '36',
     title: "Basque Language",
     author: 'VibeCode Story',
@@ -332,7 +369,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Ba'
   },
-    {
+
+  {
     id: '37',
     title: "Mansa Musa",
     author: 'VibeCode Story',
@@ -341,7 +379,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Ma'
   },
-    {
+
+  {
     id: '38',
     title: "Green Children of Woolpit",
     author: 'VibeCode Story',
@@ -350,7 +389,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Gr'
   },
-    {
+
+  {
     id: '39',
     title: "Lake Vostok",
     author: 'VibeCode Story',
@@ -359,7 +399,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=La'
   },
-    {
+
+  {
     id: '40',
     title: "Cadaver Synod",
     author: 'VibeCode Story',
@@ -368,7 +409,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Ca'
   },
-    {
+
+  {
     id: '41',
     title: "Agloe",
     author: 'VibeCode Story',
@@ -377,7 +419,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Ag'
   },
-    {
+
+  {
     id: '42',
     title: "Witold Pilecki",
     author: 'VibeCode Story',
@@ -386,7 +429,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Wi'
   },
-    {
+
+  {
     id: '43',
     title: "Lefties",
     author: 'VibeCode Story',
@@ -395,7 +439,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Le'
   },
-    {
+
+  {
     id: '44',
     title: "Cakewalk",
     author: 'VibeCode Story',
@@ -404,7 +449,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Ca'
   },
-    {
+
+  {
     id: '45',
     title: "USS Maine",
     author: 'VibeCode Story',
@@ -413,7 +459,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=US'
   },
-    {
+
+  {
     id: '46',
     title: "Ferdinand Demara",
     author: 'VibeCode Story',
@@ -422,7 +469,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Fe'
   },
-    {
+
+  {
     id: '47',
     title: "Wellington Avalanche",
     author: 'VibeCode Story',
@@ -431,7 +479,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=We'
   },
-    {
+
+  {
     id: '48',
     title: "Mincemeat",
     author: 'VibeCode Story',
@@ -440,7 +489,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Mi'
   },
-    {
+
+  {
     id: '49',
     title: "Exploding Lakes",
     author: 'VibeCode Story',
@@ -449,7 +499,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Ex'
   },
-    {
+
+  {
     id: '50',
     title: "Violet Jessop",
     author: 'VibeCode Story',
@@ -458,7 +509,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Vi'
   },
-    {
+
+  {
     id: '51',
     title: "Dwarf Elephants",
     author: 'VibeCode Story',
@@ -467,7 +519,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Dw'
   },
-    {
+
+  {
     id: '52',
     title: "Wandering Souls",
     author: 'VibeCode Story',
@@ -476,7 +529,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Wa'
   },
-    {
+
+  {
     id: '53',
     title: "Fermi Paradox",
     author: 'VibeCode Story',
@@ -485,7 +539,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Fe'
   },
-    {
+
+  {
     id: '54',
     title: "Billy Milligan",
     author: 'VibeCode Story',
@@ -494,7 +549,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Bi'
   },
-    {
+
+  {
     id: '55',
     title: "Urban Cowboys",
     author: 'VibeCode Story',
@@ -503,7 +559,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Ur'
   },
-    {
+
+  {
     id: '56',
     title: "Night Witches",
     author: 'VibeCode Story',
@@ -512,7 +569,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Ni'
   },
-    {
+
+  {
     id: '57',
     title: "Augustine Chacon",
     author: 'VibeCode Story',
@@ -521,16 +579,18 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Au'
   },
-    {
+
+  {
     id: '58',
     title: "Bachelor's Day",
     author: 'VibeCode Story',
-    description: 'A fascinating story about Bachelor''s Day.',
+    description: 'A fascinating story about Bachelor's Day.',
     audioUrl: 'https://storage.googleapis.com/story-time-audio-files/Bachelor%27s%20Day.mp3',
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Ba'
   },
-    {
+
+  {
     id: '59',
     title: "Saint Germain",
     author: 'VibeCode Story',
@@ -539,7 +599,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Sa'
   },
-    {
+
+  {
     id: '60',
     title: "Cellular Memory",
     author: 'VibeCode Story',
@@ -548,7 +609,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Ce'
   },
-    {
+
+  {
     id: '61',
     title: "Foreign Language Syndrome",
     author: 'VibeCode Story',
@@ -557,7 +619,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Fo'
   },
-    {
+
+  {
     id: '62',
     title: "Stephen Wiltshire",
     author: 'VibeCode Story',
@@ -566,7 +629,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=St'
   },
-    {
+
+  {
     id: '63',
     title: "Dunning Kruger Effect",
     author: 'VibeCode Story',
@@ -575,7 +639,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Du'
   },
-    {
+
+  {
     id: '64',
     title: "Bajau",
     author: 'VibeCode Story',
@@ -584,7 +649,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Ba'
   },
-    {
+
+  {
     id: '65',
     title: "Gombe War",
     author: 'VibeCode Story',
@@ -593,7 +659,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Go'
   },
-    {
+
+  {
     id: '66',
     title: "Emperor Norton",
     author: 'VibeCode Story',
@@ -602,7 +669,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Em'
   },
-    {
+
+  {
     id: '67',
     title: "Round of 34",
     author: 'VibeCode Story',
@@ -611,7 +679,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Ro'
   },
-    {
+
+  {
     id: '68',
     title: "Singing Sands",
     author: 'VibeCode Story',
@@ -620,7 +689,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Si'
   },
-    {
+
+  {
     id: '69',
     title: "Hiroo Inoda",
     author: 'VibeCode Story',
@@ -629,7 +699,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Hi'
   },
-    {
+
+  {
     id: '70',
     title: "Bilderberg Group",
     author: 'VibeCode Story',
@@ -638,7 +709,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Bi'
   },
-    {
+
+  {
     id: '71',
     title: "CRISPR",
     author: 'VibeCode Story',
@@ -647,7 +719,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=CR'
   },
-    {
+
+  {
     id: '72',
     title: "Pando",
     author: 'VibeCode Story',
@@ -656,7 +729,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Pa'
   },
-    {
+
+  {
     id: '73',
     title: "Ignaz Semmelweis",
     author: 'VibeCode Story',
@@ -665,7 +739,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Ig'
   },
-    {
+
+  {
     id: '74',
     title: "Coral Castle",
     author: 'VibeCode Story',
@@ -674,7 +749,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Co'
   },
-    {
+
+  {
     id: '75',
     title: "Olympic",
     author: 'VibeCode Story',
@@ -683,7 +759,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Ol'
   },
-    {
+
+  {
     id: '76',
     title: "Madam CJ Walker",
     author: 'VibeCode Story',
@@ -692,7 +769,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Ma'
   },
-    {
+
+  {
     id: '77',
     title: "Okapi",
     author: 'VibeCode Story',
@@ -701,7 +779,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Ok'
   },
-    {
+
+  {
     id: '78',
     title: "Coca Cola",
     author: 'VibeCode Story',
@@ -710,7 +789,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Co'
   },
-    {
+
+  {
     id: '79',
     title: "Svalbard Seed Vault",
     author: 'VibeCode Story',
@@ -719,7 +799,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Sv'
   },
-    {
+
+  {
     id: '80',
     title: "Hayes Pond",
     author: 'VibeCode Story',
@@ -728,7 +809,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Ha'
   },
-    {
+
+  {
     id: '81',
     title: "Good Night Kalachi",
     author: 'VibeCode Story',
@@ -737,7 +819,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Go'
   },
-    {
+
+  {
     id: '82',
     title: "Iron Lung",
     author: 'VibeCode Story',
@@ -746,16 +829,18 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Ir'
   },
-    {
+
+  {
     id: '83',
     title: "Forest Fenn's Treasure",
     author: 'VibeCode Story',
-    description: 'A fascinating story about Forest Fenn''s Treasure.',
+    description: 'A fascinating story about Forest Fenn's Treasure.',
     audioUrl: 'https://storage.googleapis.com/story-time-audio-files/Forest%20Fenn%27s%20Treasure.mp3',
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Fo'
   },
-    {
+
+  {
     id: '84',
     title: "Tardigrades",
     author: 'VibeCode Story',
@@ -764,7 +849,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Ta'
   },
-    {
+
+  {
     id: '85',
     title: "Lance Armstrong",
     author: 'VibeCode Story',
@@ -773,7 +859,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=La'
   },
-    {
+
+  {
     id: '86',
     title: "Gimli Glider",
     author: 'VibeCode Story',
@@ -782,7 +869,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Gi'
   },
-    {
+
+  {
     id: '87',
     title: "Death of Poe",
     author: 'VibeCode Story',
@@ -791,7 +879,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=De'
   },
-    {
+
+  {
     id: '88',
     title: "Barefoot College",
     author: 'VibeCode Story',
@@ -800,7 +889,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Ba'
   },
-    {
+
+  {
     id: '89',
     title: "Transatlantic Cable",
     author: 'VibeCode Story',
@@ -809,7 +899,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Tr'
   },
-    {
+
+  {
     id: '90',
     title: "Flash Crash",
     author: 'VibeCode Story',
@@ -818,7 +909,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Fl'
   },
-    {
+
+  {
     id: '91',
     title: "Roentgenogram",
     author: 'VibeCode Story',
@@ -827,7 +919,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Ro'
   },
-    {
+
+  {
     id: '92',
     title: "Operation Northwoods",
     author: 'VibeCode Story',
@@ -836,7 +929,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Op'
   },
-    {
+
+  {
     id: '93',
     title: "Interesting",
     author: 'VibeCode Story',
@@ -845,7 +939,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=In'
   },
-    {
+
+  {
     id: '94',
     title: "Microbiomes",
     author: 'VibeCode Story',
@@ -854,7 +949,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Mi'
   },
-    {
+
+  {
     id: '95',
     title: "Simo Hayha",
     author: 'VibeCode Story',
@@ -863,7 +959,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Si'
   },
-    {
+
+  {
     id: '96',
     title: "Panama Papers",
     author: 'VibeCode Story',
@@ -872,7 +969,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Pa'
   },
-    {
+
+  {
     id: '97',
     title: "Bees",
     author: 'VibeCode Story',
@@ -881,7 +979,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Be'
   },
-    {
+
+  {
     id: '98',
     title: "Battle of KaraÌnsebes",
     author: 'VibeCode Story',
@@ -890,7 +989,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Ba'
   },
-    {
+
+  {
     id: '99',
     title: "Snake Island",
     author: 'VibeCode Story',
@@ -899,7 +999,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Sn'
   },
-    {
+
+  {
     id: '100',
     title: "Vertical Farming",
     author: 'VibeCode Story',
@@ -908,7 +1009,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Ve'
   },
-    {
+
+  {
     id: '101',
     title: "Tsutomu Yamaguchi",
     author: 'VibeCode Story',
@@ -917,7 +1019,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Ts'
   },
-    {
+
+  {
     id: '102',
     title: "Salton Sea",
     author: 'VibeCode Story',
@@ -926,16 +1029,18 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Sa'
   },
-    {
+
+  {
     id: '103',
     title: "Lost Dutchman's Mine",
     author: 'VibeCode Story',
-    description: 'A fascinating story about Lost Dutchman''s Mine.',
+    description: 'A fascinating story about Lost Dutchman's Mine.',
     audioUrl: 'https://storage.googleapis.com/story-time-audio-files/Lost%20Dutchman%27s%20Mine.mp3',
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Lo'
   },
-    {
+
+  {
     id: '104',
     title: "Wilma Rudolph",
     author: 'VibeCode Story',
@@ -944,7 +1049,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Wi'
   },
-    {
+
+  {
     id: '105',
     title: "A-119",
     author: 'VibeCode Story',
@@ -953,7 +1059,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=A-'
   },
-    {
+
+  {
     id: '106',
     title: "Marie Curie",
     author: 'VibeCode Story',
@@ -962,7 +1069,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Ma'
   },
-    {
+
+  {
     id: '107',
     title: "Noise Cancelling",
     author: 'VibeCode Story',
@@ -971,7 +1079,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=No'
   },
-    {
+
+  {
     id: '108',
     title: "Ice Bucket Challenge",
     author: 'VibeCode Story',
@@ -980,7 +1089,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Ic'
   },
-    {
+
+  {
     id: '109',
     title: "Roman Aqueducts",
     author: 'VibeCode Story',
@@ -989,7 +1099,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Ro'
   },
-    {
+
+  {
     id: '110',
     title: "Unabomber",
     author: 'VibeCode Story',
@@ -998,7 +1109,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Un'
   },
-    {
+
+  {
     id: '111',
     title: "Turing Test",
     author: 'VibeCode Story',
@@ -1007,7 +1119,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Tu'
   },
-    {
+
+  {
     id: '112',
     title: "Balloon Duel",
     author: 'VibeCode Story',
@@ -1016,7 +1129,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Ba'
   },
-    {
+
+  {
     id: '113',
     title: "Stockholm Syndrome",
     author: 'VibeCode Story',
@@ -1025,7 +1139,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=St'
   },
-    {
+
+  {
     id: '114',
     title: "Military Dolphins",
     author: 'VibeCode Story',
@@ -1034,7 +1149,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Mi'
   },
-    {
+
+  {
     id: '115',
     title: "Jeanne Calment",
     author: 'VibeCode Story',
@@ -1043,7 +1159,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Je'
   },
-    {
+
+  {
     id: '116',
     title: "Lottery Winners",
     author: 'VibeCode Story',
@@ -1052,7 +1169,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Lo'
   },
-    {
+
+  {
     id: '117',
     title: "Hikikomori",
     author: 'VibeCode Story',
@@ -1061,7 +1179,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Hi'
   },
-    {
+
+  {
     id: '118',
     title: "Emu War",
     author: 'VibeCode Story',
@@ -1070,7 +1189,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Em'
   },
-    {
+
+  {
     id: '119',
     title: "Juliane Koepke",
     author: 'VibeCode Story',
@@ -1079,16 +1199,18 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Ju'
   },
-    {
+
+  {
     id: '120',
     title: "Wakefield's Fraud",
     author: 'VibeCode Story',
-    description: 'A fascinating story about Wakefield''s Fraud.',
+    description: 'A fascinating story about Wakefield's Fraud.',
     audioUrl: 'https://storage.googleapis.com/story-time-audio-files/Wakefield%27s%20Fraud.mp3',
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Wa'
   },
-    {
+
+  {
     id: '121',
     title: "Sewer Kids",
     author: 'VibeCode Story',
@@ -1097,7 +1219,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Se'
   },
-    {
+
+  {
     id: '122',
     title: "Titan Arum",
     author: 'VibeCode Story',
@@ -1106,7 +1229,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Ti'
   },
-    {
+
+  {
     id: '123',
     title: "Rainbow Warrior",
     author: 'VibeCode Story',
@@ -1115,7 +1239,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Ra'
   },
-    {
+
+  {
     id: '124',
     title: "Marshmallow Experiment",
     author: 'VibeCode Story',
@@ -1124,7 +1249,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Ma'
   },
-    {
+
+  {
     id: '125',
     title: "Great Disappointment",
     author: 'VibeCode Story',
@@ -1133,7 +1259,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Gr'
   },
-    {
+
+  {
     id: '126',
     title: "Sacagawea",
     author: 'VibeCode Story',
@@ -1142,7 +1269,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Sa'
   },
-    {
+
+  {
     id: '127',
     title: "Plumbat",
     author: 'VibeCode Story',
@@ -1151,7 +1279,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Pl'
   },
-    {
+
+  {
     id: '128',
     title: "Honeyguide",
     author: 'VibeCode Story',
@@ -1160,7 +1289,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Ho'
   },
-    {
+
+  {
     id: '129',
     title: "Victor Lustig",
     author: 'VibeCode Story',
@@ -1169,7 +1299,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Vi'
   },
-    {
+
+  {
     id: '130',
     title: "Vegas Residencies",
     author: 'VibeCode Story',
@@ -1178,7 +1309,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Ve'
   },
-    {
+
+  {
     id: '131',
     title: "Microwave",
     author: 'VibeCode Story',
@@ -1187,7 +1319,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Mi'
   },
-    {
+
+  {
     id: '132',
     title: "Door to Hell",
     author: 'VibeCode Story',
@@ -1196,7 +1329,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Do'
   },
-    {
+
+  {
     id: '133',
     title: "Hedy Lamarr",
     author: 'VibeCode Story',
@@ -1205,7 +1339,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=He'
   },
-    {
+
+  {
     id: '134',
     title: "Green Boots",
     author: 'VibeCode Story',
@@ -1214,7 +1349,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Gr'
   },
-    {
+
+  {
     id: '135',
     title: "Great Wall",
     author: 'VibeCode Story',
@@ -1223,7 +1359,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Gr'
   },
-    {
+
+  {
     id: '136',
     title: "Voynich Manuscript",
     author: 'VibeCode Story',
@@ -1232,7 +1369,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Vo'
   },
-    {
+
+  {
     id: '137',
     title: "Stream It",
     author: 'VibeCode Story',
@@ -1241,7 +1379,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=St'
   },
-    {
+
+  {
     id: '138',
     title: "Michael Malloy",
     author: 'VibeCode Story',
@@ -1250,7 +1389,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Mi'
   },
-    {
+
+  {
     id: '139',
     title: "Sand Mandalas",
     author: 'VibeCode Story',
@@ -1259,7 +1399,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Sa'
   },
-    {
+
+  {
     id: '140',
     title: "Colloquialisms",
     author: 'VibeCode Story',
@@ -1268,7 +1409,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Co'
   },
-    {
+
+  {
     id: '141',
     title: "Enigma Machine",
     author: 'VibeCode Story',
@@ -1277,7 +1419,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=En'
   },
-    {
+
+  {
     id: '142',
     title: "Daylight Saving Time",
     author: 'VibeCode Story',
@@ -1286,7 +1429,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Da'
   },
-    {
+
+  {
     id: '143',
     title: "Dorothy Custer",
     author: 'VibeCode Story',
@@ -1295,7 +1439,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Do'
   },
-    {
+
+  {
     id: '144',
     title: "Amazon River",
     author: 'VibeCode Story',
@@ -1304,7 +1449,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Am'
   },
-    {
+
+  {
     id: '145',
     title: "Beanie Babies",
     author: 'VibeCode Story',
@@ -1313,7 +1459,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Be'
   },
-    {
+
+  {
     id: '146',
     title: "Dark Web",
     author: 'VibeCode Story',
@@ -1322,7 +1469,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Da'
   },
-    {
+
+  {
     id: '147',
     title: "Botox",
     author: 'VibeCode Story',
@@ -1331,7 +1479,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Bo'
   },
-    {
+
+  {
     id: '148',
     title: "Roanoke Colony",
     author: 'VibeCode Story',
@@ -1340,7 +1489,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Ro'
   },
-    {
+
+  {
     id: '149',
     title: "Danakil Depression",
     author: 'VibeCode Story',
@@ -1349,7 +1499,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Da'
   },
-    {
+
+  {
     id: '150',
     title: "Quantum Teleportation",
     author: 'VibeCode Story',
@@ -1358,7 +1509,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Qu'
   },
-    {
+
+  {
     id: '151',
     title: "Cloud Seeding",
     author: 'VibeCode Story',
@@ -1367,7 +1519,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Cl'
   },
-    {
+
+  {
     id: '152',
     title: "Ching Shuh",
     author: 'VibeCode Story',
@@ -1376,7 +1529,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Ch'
   },
-    {
+
+  {
     id: '153',
     title: "Azorian",
     author: 'VibeCode Story',
@@ -1385,7 +1539,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Az'
   },
-    {
+
+  {
     id: '154',
     title: "Stendhal Syndrome",
     author: 'VibeCode Story',
@@ -1394,16 +1549,18 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=St'
   },
-    {
+
+  {
     id: '155',
     title: "Balloonfest '86",
     author: 'VibeCode Story',
-    description: 'A fascinating story about Balloonfest ''86.',
+    description: 'A fascinating story about Balloonfest '86.',
     audioUrl: 'https://storage.googleapis.com/story-time-audio-files/Balloonfest%20%2786.mp3',
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Ba'
   },
-    {
+
+  {
     id: '156',
     title: "Regret",
     author: 'VibeCode Story',
@@ -1412,7 +1569,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Re'
   },
-    {
+
+  {
     id: '157',
     title: "Norman Borlaug",
     author: 'VibeCode Story',
@@ -1421,7 +1579,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=No'
   },
-    {
+
+  {
     id: '158',
     title: "Rosetta Stone",
     author: 'VibeCode Story',
@@ -1430,7 +1589,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Ro'
   },
-    {
+
+  {
     id: '159',
     title: "Fubelt",
     author: 'VibeCode Story',
@@ -1439,7 +1599,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Fu'
   },
-    {
+
+  {
     id: '160',
     title: "Oak Island",
     author: 'VibeCode Story',
@@ -1448,7 +1609,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Oa'
   },
-    {
+
+  {
     id: '161',
     title: "Katherine Switzer",
     author: 'VibeCode Story',
@@ -1457,7 +1619,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Ka'
   },
-    {
+
+  {
     id: '162',
     title: "Overtoun Bridge",
     author: 'VibeCode Story',
@@ -1466,7 +1629,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Ov'
   },
-    {
+
+  {
     id: '163',
     title: "Aricebo Message",
     author: 'VibeCode Story',
@@ -1475,7 +1639,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Ar'
   },
-    {
+
+  {
     id: '164',
     title: "Music Royalty",
     author: 'VibeCode Story',
@@ -1484,7 +1649,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Mu'
   },
-    {
+
+  {
     id: '165',
     title: "Roopkund Lake",
     author: 'VibeCode Story',
@@ -1493,7 +1659,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Ro'
   },
-    {
+
+  {
     id: '166',
     title: "Haute Couture",
     author: 'VibeCode Story',
@@ -1502,7 +1669,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Ha'
   },
-    {
+
+  {
     id: '167',
     title: "Elephant Rider",
     author: 'VibeCode Story',
@@ -1511,7 +1679,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=El'
   },
-    {
+
+  {
     id: '168',
     title: "Francis Kelsey",
     author: 'VibeCode Story',
@@ -1520,7 +1689,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Fr'
   },
-    {
+
+  {
     id: '169',
     title: "Fukushima Disaster",
     author: 'VibeCode Story',
@@ -1529,7 +1699,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Fu'
   },
-    {
+
+  {
     id: '170',
     title: "Ice Stupas",
     author: 'VibeCode Story',
@@ -1538,7 +1709,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Ic'
   },
-    {
+
+  {
     id: '171',
     title: "Tunguska Event",
     author: 'VibeCode Story',
@@ -1547,7 +1719,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Tu'
   },
-    {
+
+  {
     id: '172',
     title: "Toxic Lady",
     author: 'VibeCode Story',
@@ -1556,7 +1729,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=To'
   },
-    {
+
+  {
     id: '173',
     title: "Stolen Stradivarius",
     author: 'VibeCode Story',
@@ -1565,7 +1739,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=St'
   },
-    {
+
+  {
     id: '174',
     title: "Shroud of Turin",
     author: 'VibeCode Story',
@@ -1574,7 +1749,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Sh'
   },
-    {
+
+  {
     id: '175',
     title: "Masabumi Hosono",
     author: 'VibeCode Story',
@@ -1583,7 +1759,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Ma'
   },
-    {
+
+  {
     id: '176',
     title: "Notable Quotes",
     author: 'VibeCode Story',
@@ -1592,7 +1769,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=No'
   },
-    {
+
+  {
     id: '177',
     title: "Whole Body Scan",
     author: 'VibeCode Story',
@@ -1601,7 +1779,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Wh'
   },
-    {
+
+  {
     id: '178',
     title: "Art Forgery",
     author: 'VibeCode Story',
@@ -1610,7 +1789,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Ar'
   },
-    {
+
+  {
     id: '179',
     title: "Race to the South Pole",
     author: 'VibeCode Story',
@@ -1619,7 +1799,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Ra'
   },
-    {
+
+  {
     id: '180',
     title: "Cynthia Ann Parker",
     author: 'VibeCode Story',
@@ -1628,7 +1809,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Cy'
   },
-    {
+
+  {
     id: '181',
     title: "Superstitions",
     author: 'VibeCode Story',
@@ -1637,7 +1819,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Su'
   },
-    {
+
+  {
     id: '182',
     title: "Truffles",
     author: 'VibeCode Story',
@@ -1646,7 +1829,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Tr'
   },
-    {
+
+  {
     id: '183',
     title: "Space Junk",
     author: 'VibeCode Story',
@@ -1655,7 +1839,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Sp'
   },
-    {
+
+  {
     id: '184',
     title: "Living Bridges",
     author: 'VibeCode Story',
@@ -1664,7 +1849,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Li'
   },
-    {
+
+  {
     id: '185',
     title: "Terracotta Army",
     author: 'VibeCode Story',
@@ -1673,7 +1859,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Te'
   },
-    {
+
+  {
     id: '186',
     title: "Siestas",
     author: 'VibeCode Story',
@@ -1682,7 +1869,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Si'
   },
-    {
+
+  {
     id: '187',
     title: "Big Gamble",
     author: 'VibeCode Story',
@@ -1691,7 +1879,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Bi'
   },
-    {
+
+  {
     id: '188',
     title: "Johnny Appleseed",
     author: 'VibeCode Story',
@@ -1700,7 +1889,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Jo'
   },
-    {
+
+  {
     id: '189',
     title: "GPS Tractor",
     author: 'VibeCode Story',
@@ -1709,7 +1899,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=GP'
   },
-    {
+
+  {
     id: '190',
     title: "STD",
     author: 'VibeCode Story',
@@ -1718,7 +1909,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=ST'
   },
-    {
+
+  {
     id: '191',
     title: "Cher Ami",
     author: 'VibeCode Story',
@@ -1727,7 +1919,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Ch'
   },
-    {
+
+  {
     id: '192',
     title: "Friedrich Nietzsche",
     author: 'VibeCode Story',
@@ -1736,7 +1929,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Fr'
   },
-    {
+
+  {
     id: '193',
     title: "Education Showdown",
     author: 'VibeCode Story',
@@ -1745,7 +1939,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Ed'
   },
-    {
+
+  {
     id: '194',
     title: "Hudson Miracle",
     author: 'VibeCode Story',
@@ -1754,7 +1949,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Hu'
   },
-    {
+
+  {
     id: '195',
     title: "Coelacanth",
     author: 'VibeCode Story',
@@ -1763,7 +1959,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Co'
   },
-    {
+
+  {
     id: '196',
     title: "Chicago",
     author: 'VibeCode Story',
@@ -1772,7 +1969,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Ch'
   },
-    {
+
+  {
     id: '197',
     title: "Flight 19",
     author: 'VibeCode Story',
@@ -1781,7 +1979,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Fl'
   },
-    {
+
+  {
     id: '198',
     title: "Michel Lotito",
     author: 'VibeCode Story',
@@ -1790,7 +1989,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Mi'
   },
-    {
+
+  {
     id: '199',
     title: "Roundabouts",
     author: 'VibeCode Story',
@@ -1799,7 +1999,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Ro'
   },
-    {
+
+  {
     id: '200',
     title: "Code of Hammurabi",
     author: 'VibeCode Story',
@@ -1808,7 +2009,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Co'
   },
-    {
+
+  {
     id: '201',
     title: "Circus",
     author: 'VibeCode Story',
@@ -1817,7 +2019,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Ci'
   },
-    {
+
+  {
     id: '202',
     title: "Witching Stick",
     author: 'VibeCode Story',
@@ -1826,7 +2029,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Wi'
   },
-    {
+
+  {
     id: '203',
     title: "Linsanity",
     author: 'VibeCode Story',
@@ -1835,7 +2039,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Li'
   },
-    {
+
+  {
     id: '204',
     title: "Subliminal Messages",
     author: 'VibeCode Story',
@@ -1844,7 +2049,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Su'
   },
-    {
+
+  {
     id: '205',
     title: "Commercial Air",
     author: 'VibeCode Story',
@@ -1853,7 +2059,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Co'
   },
-    {
+
+  {
     id: '206',
     title: "Marie Antoinette",
     author: 'VibeCode Story',
@@ -1862,7 +2069,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Ma'
   },
-    {
+
+  {
     id: '207',
     title: "Burj Kalifa",
     author: 'VibeCode Story',
@@ -1871,7 +2079,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Bu'
   },
-    {
+
+  {
     id: '208',
     title: "Christmas Truce",
     author: 'VibeCode Story',
@@ -1880,7 +2089,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Ch'
   },
-    {
+
+  {
     id: '209',
     title: "Modern Pirates",
     author: 'VibeCode Story',
@@ -1889,7 +2099,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Mo'
   },
-    {
+
+  {
     id: '210',
     title: "Gilgamesh",
     author: 'VibeCode Story',
@@ -1898,7 +2109,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Gi'
   },
-    {
+
+  {
     id: '211',
     title: "Estimation",
     author: 'VibeCode Story',
@@ -1907,7 +2119,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Es'
   },
-    {
+
+  {
     id: '212',
     title: "Clipperton Island",
     author: 'VibeCode Story',
@@ -1916,7 +2129,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Cl'
   },
-    {
+
+  {
     id: '213',
     title: "Anti-Aging",
     author: 'VibeCode Story',
@@ -1925,7 +2139,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=An'
   },
-    {
+
+  {
     id: '214',
     title: "Noor Inayat Khan",
     author: 'VibeCode Story',
@@ -1934,7 +2149,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=No'
   },
-    {
+
+  {
     id: '215',
     title: "Third Wave",
     author: 'VibeCode Story',
@@ -1943,7 +2159,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Th'
   },
-    {
+
+  {
     id: '216',
     title: "Lab Diamonds",
     author: 'VibeCode Story',
@@ -1952,7 +2169,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=La'
   },
-    {
+
+  {
     id: '217',
     title: "Cost of Admission",
     author: 'VibeCode Story',
@@ -1961,7 +2179,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Co'
   },
-    {
+
+  {
     id: '218',
     title: "Otzi",
     author: 'VibeCode Story',
@@ -1970,7 +2189,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Ot'
   },
-    {
+
+  {
     id: '219',
     title: "Ancient Pyramids",
     author: 'VibeCode Story',
@@ -1979,7 +2199,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=An'
   },
-    {
+
+  {
     id: '220',
     title: "Spanish Flu",
     author: 'VibeCode Story',
@@ -1988,7 +2209,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Sp'
   },
-    {
+
+  {
     id: '221',
     title: "Raining Animals",
     author: 'VibeCode Story',
@@ -1997,7 +2219,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Ra'
   },
-    {
+
+  {
     id: '222',
     title: "Chiune Sugihara",
     author: 'VibeCode Story',
@@ -2006,7 +2229,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Ch'
   },
-    {
+
+  {
     id: '223',
     title: "Body Language",
     author: 'VibeCode Story',
@@ -2015,7 +2239,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Bo'
   },
-    {
+
+  {
     id: '224',
     title: "Legos",
     author: 'VibeCode Story',
@@ -2024,7 +2249,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Le'
   },
-    {
+
+  {
     id: '225',
     title: "Skull and Bones",
     author: 'VibeCode Story',
@@ -2033,7 +2259,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Sk'
   },
-    {
+
+  {
     id: '226',
     title: "Tu Youyou",
     author: 'VibeCode Story',
@@ -2042,7 +2269,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Tu'
   },
-    {
+
+  {
     id: '227',
     title: "Groom of the Stool",
     author: 'VibeCode Story',
@@ -2051,7 +2279,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Gr'
   },
-    {
+
+  {
     id: '228',
     title: "Synesthesia",
     author: 'VibeCode Story',
@@ -2060,7 +2289,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Sy'
   },
-    {
+
+  {
     id: '229',
     title: "Sports Psychology",
     author: 'VibeCode Story',
@@ -2069,7 +2299,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Sp'
   },
-    {
+
+  {
     id: '230',
     title: "Shortest War",
     author: 'VibeCode Story',
@@ -2078,7 +2309,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Sh'
   },
-    {
+
+  {
     id: '231',
     title: "Trolley Problem",
     author: 'VibeCode Story',
@@ -2087,7 +2319,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Tr'
   },
-    {
+
+  {
     id: '232',
     title: "Concrete",
     author: 'VibeCode Story',
@@ -2096,7 +2329,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Co'
   },
-    {
+
+  {
     id: '233',
     title: "Sailing Stones",
     author: 'VibeCode Story',
@@ -2105,7 +2339,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Sa'
   },
-    {
+
+  {
     id: '234',
     title: "Le Palais Idéal",
     author: 'VibeCode Story',
@@ -2114,7 +2349,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Le'
   },
-    {
+
+  {
     id: '235',
     title: "Puyi",
     author: 'VibeCode Story',
@@ -2123,7 +2359,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Pu'
   },
-    {
+
+  {
     id: '236',
     title: "Anesthesia Awareness",
     author: 'VibeCode Story',
@@ -2132,7 +2369,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=An'
   },
-    {
+
+  {
     id: '237',
     title: "Black Hand",
     author: 'VibeCode Story',
@@ -2141,7 +2379,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Bl'
   },
-    {
+
+  {
     id: '238',
     title: "Rasputin",
     author: 'VibeCode Story',
@@ -2150,7 +2389,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Ra'
   },
-    {
+
+  {
     id: '239',
     title: "Dyatlov Pass",
     author: 'VibeCode Story',
@@ -2159,7 +2399,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Dy'
   },
-    {
+
+  {
     id: '240',
     title: "Computers",
     author: 'VibeCode Story',
@@ -2168,7 +2409,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Co'
   },
-    {
+
+  {
     id: '241',
     title: "Zombie Ants",
     author: 'VibeCode Story',
@@ -2177,7 +2419,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Zo'
   },
-    {
+
+  {
     id: '242',
     title: "Trending Global",
     author: 'VibeCode Story',
@@ -2186,7 +2429,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Tr'
   },
-    {
+
+  {
     id: '243',
     title: "Iran Hostage Crisis",
     author: 'VibeCode Story',
@@ -2195,7 +2439,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Ir'
   },
-    {
+
+  {
     id: '244',
     title: "Great Attractor",
     author: 'VibeCode Story',
@@ -2204,7 +2449,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Gr'
   },
-    {
+
+  {
     id: '245',
     title: "Man From Taured",
     author: 'VibeCode Story',
@@ -2213,7 +2459,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Ma'
   },
-    {
+
+  {
     id: '246',
     title: "Turritopsis",
     author: 'VibeCode Story',
@@ -2222,7 +2469,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Tu'
   },
-    {
+
+  {
     id: '247',
     title: "Theory of Relativity",
     author: 'VibeCode Story',
@@ -2231,7 +2479,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Th'
   },
-    {
+
+  {
     id: '248',
     title: "Gruen Transfer",
     author: 'VibeCode Story',
@@ -2240,7 +2489,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Gr'
   },
-    {
+
+  {
     id: '249',
     title: "Medellín Skyway",
     author: 'VibeCode Story',
@@ -2249,7 +2499,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Me'
   },
-    {
+
+  {
     id: '250',
     title: "Henrietta Lacks",
     author: 'VibeCode Story',
@@ -2258,7 +2509,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=He'
   },
-    {
+
+  {
     id: '251',
     title: "Chauvet Cave",
     author: 'VibeCode Story',
@@ -2267,7 +2519,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Ch'
   },
-    {
+
+  {
     id: '252',
     title: "Music Therapy",
     author: 'VibeCode Story',
@@ -2276,7 +2529,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Mu'
   },
-    {
+
+  {
     id: '253',
     title: "Homeschooling",
     author: 'VibeCode Story',
@@ -2285,7 +2539,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Ho'
   },
-    {
+
+  {
     id: '254',
     title: "Qinghai-Tibet Railway",
     author: 'VibeCode Story',
@@ -2294,7 +2549,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Qi'
   },
-    {
+
+  {
     id: '255',
     title: "French Cars",
     author: 'VibeCode Story',
@@ -2303,7 +2559,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Fr'
   },
-    {
+
+  {
     id: '256',
     title: "Silk Road",
     author: 'VibeCode Story',
@@ -2312,7 +2569,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Si'
   },
-    {
+
+  {
     id: '257',
     title: "Mickey Drexler",
     author: 'VibeCode Story',
@@ -2321,7 +2579,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Mi'
   },
-    {
+
+  {
     id: '258',
     title: "Avro Arrow",
     author: 'VibeCode Story',
@@ -2330,7 +2589,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Av'
   },
-    {
+
+  {
     id: '259',
     title: "Bairo Pite Clinic",
     author: 'VibeCode Story',
@@ -2339,7 +2599,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Ba'
   },
-    {
+
+  {
     id: '260',
     title: "Evel Knievel",
     author: 'VibeCode Story',
@@ -2348,7 +2609,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Ev'
   },
-    {
+
+  {
     id: '261',
     title: "Fibonacci in Nature",
     author: 'VibeCode Story',
@@ -2357,7 +2619,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Fi'
   },
-    {
+
+  {
     id: '262',
     title: "Milgram Experiment",
     author: 'VibeCode Story',
@@ -2366,7 +2629,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Mi'
   },
-    {
+
+  {
     id: '263',
     title: "Kowloon Walled City",
     author: 'VibeCode Story',
@@ -2375,7 +2639,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Ko'
   },
-    {
+
+  {
     id: '264',
     title: "Butterfly Effect",
     author: 'VibeCode Story',
@@ -2384,7 +2649,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Bu'
   },
-    {
+
+  {
     id: '265',
     title: "Nadia Comăneci",
     author: 'VibeCode Story',
@@ -2393,7 +2659,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Na'
   },
-    {
+
+  {
     id: '266',
     title: "Easter Island Statues",
     author: 'VibeCode Story',
@@ -2402,7 +2669,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Ea'
   },
-    {
+
+  {
     id: '267',
     title: "Nellie Bly",
     author: 'VibeCode Story',
@@ -2411,7 +2679,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Ne'
   },
-    {
+
+  {
     id: '268',
     title: "Asian Massage",
     author: 'VibeCode Story',
@@ -2420,7 +2689,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=As'
   },
-    {
+
+  {
     id: '269',
     title: "False Facts",
     author: 'VibeCode Story',
@@ -2429,7 +2699,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Fa'
   },
-    {
+
+  {
     id: '270',
     title: "Travel Sports",
     author: 'VibeCode Story',
@@ -2438,7 +2709,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Tr'
   },
-    {
+
+  {
     id: '271',
     title: "Eddie Chapman",
     author: 'VibeCode Story',
@@ -2447,7 +2719,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Ed'
   },
-    {
+
+  {
     id: '272',
     title: "Disneyland",
     author: 'VibeCode Story',
@@ -2456,7 +2729,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Di'
   },
-    {
+
+  {
     id: '273',
     title: "Mexican Wolf",
     author: 'VibeCode Story',
@@ -2465,7 +2739,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Me'
   },
-    {
+
+  {
     id: '274',
     title: "Pituitary",
     author: 'VibeCode Story',
@@ -2474,7 +2749,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Pi'
   },
-    {
+
+  {
     id: '275',
     title: "Huldufólk",
     author: 'VibeCode Story',
@@ -2483,7 +2759,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Hu'
   },
-    {
+
+  {
     id: '276',
     title: "EV Paradox",
     author: 'VibeCode Story',
@@ -2492,7 +2769,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=EV'
   },
-    {
+
+  {
     id: '277',
     title: "Coffee",
     author: 'VibeCode Story',
@@ -2501,7 +2779,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Co'
   },
-    {
+
+  {
     id: '278',
     title: "Henry Bingham III",
     author: 'VibeCode Story',
@@ -2510,7 +2789,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=He'
   },
-    {
+
+  {
     id: '279',
     title: "Bystander Effect",
     author: 'VibeCode Story',
@@ -2519,7 +2799,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=By'
   },
-    {
+
+  {
     id: '280',
     title: "Attention Span",
     author: 'VibeCode Story',
@@ -2528,7 +2809,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=At'
   },
-    {
+
+  {
     id: '281',
     title: "Sourdough",
     author: 'VibeCode Story',
@@ -2537,7 +2819,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=So'
   },
-    {
+
+  {
     id: '282',
     title: "Edward Bernays",
     author: 'VibeCode Story',
@@ -2546,7 +2829,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Ed'
   },
-    {
+
+  {
     id: '283',
     title: "Cryotherapy",
     author: 'VibeCode Story',
@@ -2555,7 +2839,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Cr'
   },
-    {
+
+  {
     id: '284',
     title: "Monty Hall Problem",
     author: 'VibeCode Story',
@@ -2564,7 +2849,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Mo'
   },
-    {
+
+  {
     id: '285',
     title: "Balloon Boy Hoax",
     author: 'VibeCode Story',
@@ -2573,7 +2859,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Ba'
   },
-    {
+
+  {
     id: '286',
     title: "Psychology of Colors",
     author: 'VibeCode Story',
@@ -2582,7 +2869,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Ps'
   },
-    {
+
+  {
     id: '287',
     title: "Samuel Morse",
     author: 'VibeCode Story',
@@ -2591,7 +2879,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Sa'
   },
-    {
+
+  {
     id: '288',
     title: "Placebo Effect",
     author: 'VibeCode Story',
@@ -2600,7 +2889,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Pl'
   },
-    {
+
+  {
     id: '289',
     title: "Bass Reeves",
     author: 'VibeCode Story',
@@ -2609,7 +2899,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Ba'
   },
-    {
+
+  {
     id: '290',
     title: "Time of Our Lives",
     author: 'VibeCode Story',
@@ -2618,7 +2909,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Ti'
   },
-    {
+
+  {
     id: '291',
     title: "Beyond Impossible",
     author: 'VibeCode Story',
@@ -2627,7 +2919,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Be'
   },
-    {
+
+  {
     id: '292',
     title: "Monarch Migration",
     author: 'VibeCode Story',
@@ -2636,7 +2929,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Mo'
   },
-    {
+
+  {
     id: '293',
     title: "Deepwater Horizon",
     author: 'VibeCode Story',
@@ -2645,7 +2939,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=De'
   },
-    {
+
+  {
     id: '294',
     title: "Terminal One",
     author: 'VibeCode Story',
@@ -2654,7 +2949,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Te'
   },
-    {
+
+  {
     id: '295',
     title: "Nazca Lines",
     author: 'VibeCode Story',
@@ -2663,7 +2959,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/4c1d95/white?text=Na'
   },
-    {
+
+  {
     id: '296',
     title: "Green Book",
     author: 'VibeCode Story',
@@ -2672,7 +2969,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/831843/white?text=Gr'
   },
-    {
+
+  {
     id: '297',
     title: "Auctioneer",
     author: 'VibeCode Story',
@@ -2681,16 +2979,18 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9f1239/white?text=Au'
   },
-    {
+
+  {
     id: '298',
     title: "Dunbar's Number",
     author: 'VibeCode Story',
-    description: 'A fascinating story about Dunbar''s Number.',
+    description: 'A fascinating story about Dunbar's Number.',
     audioUrl: 'https://storage.googleapis.com/story-time-audio-files/Dunbar%27s%20Number.mp3',
     duration: 0,
     coverImage: 'https://placehold.co/400x400/9a3412/white?text=Du'
   },
-    {
+
+  {
     id: '299',
     title: "Emmanuel Kant",
     author: 'VibeCode Story',
@@ -2699,7 +2999,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/92400e/white?text=Em'
   },
-    {
+
+  {
     id: '300',
     title: "Year Without Summer",
     author: 'VibeCode Story',
@@ -2708,7 +3009,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3f6212/white?text=Ye'
   },
-    {
+
+  {
     id: '301',
     title: "Mucus",
     author: 'VibeCode Story',
@@ -2717,7 +3019,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e293b/white?text=Mu'
   },
-    {
+
+  {
     id: '302',
     title: "Maya Blue",
     author: 'VibeCode Story',
@@ -2726,7 +3029,8 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/064e3b/white?text=Ma'
   },
-    {
+
+  {
     id: '303',
     title: "Circada 3301",
     author: 'VibeCode Story',
@@ -2735,11 +3039,12 @@ export const STORIES: Story[] = [    {
     duration: 0,
     coverImage: 'https://placehold.co/400x400/1e40af/white?text=Ci'
   },
-    {
+
+  {
     id: '304',
     title: "Director's Cut",
     author: 'VibeCode Story',
-    description: 'A fascinating story about Director''s Cut.',
+    description: 'A fascinating story about Director's Cut.',
     audioUrl: 'https://storage.googleapis.com/story-time-audio-files/Director%27s%20Cut.mp3',
     duration: 0,
     coverImage: 'https://placehold.co/400x400/3730a3/white?text=Di'
