@@ -21,9 +21,14 @@ app.get('/api/health', (req, res) => {
 
 // Audio proxy to avoid client-side CORS issues with the storage bucket.
 app.get('/api/audio', async (req, res) => {
-  const key = req.query.key as string | undefined;
-  if (!key) {
+  const raw = req.query.key as string | undefined;
+  if (!raw) {
     return res.status(400).json({ error: 'Missing key parameter' });
+  }
+
+  const key = decodeURIComponent(raw);
+  if (!key.startsWith('Storytime-audio-files/')) {
+    return res.status(400).json({ error: 'Invalid key parameter' });
   }
 
   const upstream = `https://storage.googleapis.com/${key}`;

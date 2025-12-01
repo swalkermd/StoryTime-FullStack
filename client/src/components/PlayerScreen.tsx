@@ -53,7 +53,7 @@ export default function PlayerScreen() {
   };
 
   return (
-    <div className="flex flex-col gap-6 lg:gap-10 items-center justify-between h-full p-6 lg:p-10 text-center overflow-hidden">
+    <div className="flex flex-col gap-5 lg:gap-8 items-center justify-between h-full p-6 lg:p-8 text-center overflow-hidden">
       <div className="flex-shrink-0" />
       
       <motion.div
@@ -78,16 +78,16 @@ export default function PlayerScreen() {
             }}
             className="absolute inset-0 flex flex-col items-center justify-start"
           >
-            <div className="relative w-full h-auto aspect-square rounded-3xl shadow-[0_25px_60px_rgba(0,0,0,0.35)] overflow-hidden bg-[#0f1729] border border-[rgba(255,255,255,0.06)]">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(124,58,237,0.35),transparent_45%),radial-gradient(circle_at_70%_30%,rgba(6,182,212,0.3),transparent_45%),radial-gradient(circle_at_50%_80%,rgba(244,114,182,0.25),transparent_45%)]" />
-              <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs uppercase tracking-[0.2em] bg-white/10 border border-white/10 mb-3">
+            <div className="relative w-full h-auto aspect-square rounded-[32px] shadow-[0_30px_70px_rgba(0,0,0,0.45)] overflow-hidden bg-gradient-to-br from-[#1f2937] via-[#111827] to-[#0b1223] border border-white/10">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(99,102,241,0.35),transparent_45%),radial-gradient(circle_at_75%_30%,rgba(34,211,238,0.28),transparent_50%),radial-gradient(circle_at_40%_80%,rgba(244,114,182,0.22),transparent_50%)]" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center gap-3">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] uppercase tracking-[0.2em] bg-white/10 border border-white/10">
                   Now Playing
                 </div>
-                <h1 className="text-3xl lg:text-4xl font-bold text-shadow-lg leading-tight" title={story.title}>
+                <h1 className="text-3xl lg:text-4xl font-bold text-white leading-tight" title={story.title}>
                   {story.title}
                 </h1>
-                <p className="text-sm text-[#F5DEB3]/80 mt-2">StoryTime Originals</p>
+                <p className="text-sm text-white/70">StoryTime Collection</p>
               </div>
             </div>
           </motion.div>
