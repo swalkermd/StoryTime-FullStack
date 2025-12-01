@@ -29,9 +29,8 @@ const clientBuildPath = clientBuildCandidates.find((candidate) => fs.existsSync(
 if (clientBuildPath) {
   app.use(express.static(clientBuildPath));
 
-  // Handle SPA routing: serve index.html for any unknown path
-  // Express 5 requires a leading slash; use /* to avoid path-to-regexp error
-  app.get('/*', (req, res) => {
+  // SPA fallback: use app.use to avoid path-to-regexp wildcard issues in Express 5
+  app.use((req, res) => {
     res.sendFile(path.join(clientBuildPath, 'index.html'));
   });
 } else {
